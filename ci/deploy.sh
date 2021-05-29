@@ -24,7 +24,7 @@ rsync \
     --compress \
     --progress \
     --rsh="ssh -i ${SITES_SSH_KEY} -o BatchMode=yes -p 18765 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no" \
-    build "u7-nnfq7m4dqfyx@35.214.170.100:/home/u7-nnfq7m4dqfyx/${base_folder}"
+    build/ "u7-nnfq7m4dqfyx@35.214.170.100:/home/u7-nnfq7m4dqfyx/${base_folder}"
 
 remote_exec () {
     ssh -i "${SITES_SSH_KEY}" -o BatchMode=yes \
