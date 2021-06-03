@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  background: #dbe7b5;
+  background: white;
 
   .parameters {
     width: 75%;
