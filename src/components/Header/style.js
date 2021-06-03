@@ -7,10 +7,15 @@ export const Wrapper = styled.div`
     padding-left: 15px;
     padding-right: 15px;
     align-items: flex-end;
+    background: #dbe7b5;
 
     .brand-txt {
-      margin-right: 10px;
+      margin-right: 20px;
       font-weight: 700;
+    }
+
+    .brand-logo {
+      width: 200px;
     }
 
     .tab-title {

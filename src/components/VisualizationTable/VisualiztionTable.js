@@ -8,61 +8,76 @@ const VisualizationTable = () => {
    const [activeCol, setActiveCol] = useState("")
    const [activeCol2, setActiveCol2] = useState("")
    const [activeCol3, setActiveCol3] = useState("")
+   
    const [criteriaList, setCreteria] = useState([])
    const [indicatorList, setIndicatorList] = useState([])
    const [details, setDetails] = useState({})
    
 
-   const filterIndicators = () => {
-    const filtered = indicators.filter(data => data.parent === activeCol2)
-     return setIndicatorList(filtered)
+   const filterIndicators = (key) => {
+    const filtered = indicators.filter(data => data.parent === key)
+     return filtered;
   }
   const updateCol1 = (key) => {
       setActiveCol(key)
-      filterCreteria()
-      if (criteriaList){
-        setActiveCol2(criteriaList[0].key)
+     const arr = filterCreteria(key)
+     setCreteria(arr)
+     if (arr.length > 0){
+       setActiveCol2(arr[0].key)
+     } else {
+       setCreteria([])
+     }
       
-      }
     return 
   }
   const updateCol2 = (key) => {
       setActiveCol2(key)
-      filterIndicators()
+     const arr = filterIndicators(key)
+
+     setIndicatorList(arr)
+     if (arr.length > 0 ) {
+       setActiveCol3(arr[0].key)
+     } else {
+       setIndicatorList([])
+     }
+     
     return 
   }
 
-  const updateDetail = (key) => {
+ 
+
+  const updateCol3 = (key) => {
     setActiveCol3(key)
 
-    const filtered = indicatorDetails.filter(data => data.parent === key)[0]
-    console.log(filtered, "got here")
-   return setDetails(filtered)
+    const filtered = indicatorDetails.filter(data => data.parent === key)
+    if (filtered.length > 0 ) {
+      setDetails(filtered[0])
+    } else {
+      setDetails({})
+    }
+   return 
   }
 
-  const filterCreteria = () => {
-    const filtered = criterias.filter(data => data.parent === activeCol)
-   return setCreteria(filtered)
+  const filterCreteria = (key) => {
+    const filtered = criterias.filter(data => data.parent === key)
+   return filtered
   }
 
    useEffect(() => {
-   filterCreteria()
-   filterIndicators()
+   
    if(activeCol === ""){
-     setActiveCol(principles[0].key)
+    updateCol1("A")
    } 
 
    if(activeCol2 === ""){
-     setActiveCol2(criterias[0].key)
+     updateCol2("A.1")
    }  
 
    if(activeCol3 === ""){
-     setActiveCol3(indicators[0].key)
+     updateCol3("A.1.1")
    } 
 
-   if(Object.keys(details).length < 1){
-     setDetails(indicatorDetails[0])
-   }  
+  
 
    }, [activeCol, activeCol2, activeCol3])
 
@@ -92,7 +107,7 @@ const VisualizationTable = () => {
             </div>
           <div className="col-2">
             {criteriaList && criteriaList.map(data => (
-                 <div key={data.key} onClick={() => updateCol2(data.key)} className={`body-item ${activeCol2 === data.key ? 'col-2-active' : ''}`}>
+                 <div key={data.key} onClick={() => updateCol2(data.key)} className={`body-item ${activeCol2 == data.key ? 'col-2-active' : ''}`}>
                  <div>
                      {data.data ? data.data : ""}
    
@@ -108,7 +123,7 @@ const VisualizationTable = () => {
         </div>
         <div className="col-3">
           {indicatorList && indicatorList.map(indicator => (
-               <div key={indicator.key} onClick={() => updateDetail(indicator.key)} className={`body-item ${activeCol3 === indicator.key ? 'col-3-active' : ''}`}>
+               <div key={indicator.key} onClick={() => updateCol3(indicator.key)} className={`body-item ${activeCol3 === indicator.key ? 'col-3-active' : ''}`}>
                    <div>
                           {indicator.data ? indicator.data : ""}
                    </div>

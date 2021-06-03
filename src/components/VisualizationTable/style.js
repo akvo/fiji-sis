@@ -53,10 +53,10 @@ export const Wrapper = styled.div`
     padding-bottom: 15px;
     line-break: auto;
     cursor: pointer;
-    color: #404244;
+    color: white;
     display: flex;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
     height: 100px;
   }
 
