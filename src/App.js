@@ -1,13 +1,15 @@
 import './App.css';
+import Header from './components/Header/Header';
+import PageWrapper from './components/PageWrapper/PageWrapper';
+import VisualizationTable from './components/VisualizationTable/VisualiztionTable';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="/reddfiji_logo.png" className="App-logo" alt="logo" />
-        <p>
-        </p>
-      </header>
+      <PageWrapper>
+        <Header />
+        <VisualizationTable />
+      </PageWrapper>
     </div>
   );
 }
