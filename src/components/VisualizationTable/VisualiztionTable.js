@@ -23,7 +23,7 @@ const VisualizationTable = () => {
      const arr = filterCreteria(key)
      setCreteria(arr)
      if (arr.length > 0){
-       setActiveCol2(arr[0].key)
+      updateCol2(arr[0].key)
      } else {
        setCreteria([])
      }
@@ -36,9 +36,10 @@ const VisualizationTable = () => {
 
      setIndicatorList(arr)
      if (arr.length > 0 ) {
-       setActiveCol3(arr[0].key)
+       updateCol3(arr[0].key)
      } else {
        setIndicatorList([])
+       setDetails({})
      }
      
     return 
