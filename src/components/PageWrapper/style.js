@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     padding-left: 50px;
     padding-right: 50px;
+    background: #8E966F;
 
     .contents {
         border-left: 1px solid #edf5ea;
