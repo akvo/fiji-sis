@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: flex;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   background: white;
 
   .parameters {
@@ -23,7 +21,7 @@ export const Wrapper = styled.div`
 
   .head-item {
     margin-left: 15px;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
   }
   .body-wrap {
@@ -34,11 +32,11 @@ export const Wrapper = styled.div`
   }
 
   .col-1 {
-    height: 100%;
+    height: 96%;
     border-right: 1px solid #dcd7d7;
   }
   .col-2 {
-    height: 100%;
+    height: 96%;
     border-right: 1px solid #dcd7d7;
   }
   .col-3 {
@@ -46,7 +44,7 @@ export const Wrapper = styled.div`
   }
 
   .body-item {
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 400;
     padding-left: 15px;
     padding-right: 15px;
@@ -57,8 +55,9 @@ export const Wrapper = styled.div`
     color: black;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-weight: 600;
-    height: 100px;
+    min-height: 100px;
   }
 
   .details {
@@ -104,8 +103,7 @@ export const Wrapper = styled.div`
   }
 
   .arrow-wrap {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
 }
 
 .arrow {
