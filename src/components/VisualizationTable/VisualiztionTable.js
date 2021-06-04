@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { AiOutlineRight } from 'react-icons/ai'
 import {principles, criterias, indicators, indicatorDetails} from "../../assets/principles"
+import data from "../../assets/data.json"
 
 import { Wrapper } from "./style"
 
@@ -65,6 +66,7 @@ const VisualizationTable = () => {
   }
 
    useEffect(() => {
+
    
    if(activeCol === ""){
     updateCol1("A")
