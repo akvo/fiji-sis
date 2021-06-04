@@ -128,7 +128,7 @@ const VisualizationTable = () => {
                    <div>
                           {indicator.data ? indicator.data : ""}
                    </div>
-                   {activeCol3 && (
+                   {activeCol3 === indicator.key && (
                       <div className="arrow-wrap">
                       <AiOutlineRight className="arrow"/>
                    </div>
