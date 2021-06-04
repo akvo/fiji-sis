@@ -96,12 +96,12 @@ const VisualizationTable = () => {
           <div className="col-1">
             {principles && principles.map(data => (
                <div key={data.key} onClick={() => updateCol1(data.key)} className={`body-item ${activeCol === data.key ? 'col-1-active' : ''}`}>
-               <div>
+               <di className="txt-area"v>
                 {data.data ? data.data : ""}
-               </div>
-               {activeCol === data.key && (<div className="arrow-wrap">
+               </di>
+               {activeCol === data.key ? (<div className="arrow-wrap">
                      <AiOutlineRight className="arrow"/>
-                 </div>)}
+                 </div>): <div className="arrow-wrap"></div>}
                  
              </div>
             ))}
@@ -111,7 +111,7 @@ const VisualizationTable = () => {
           <div className="col-2">
             {criteriaList && criteriaList.map(data => (
                  <div key={data.key} onClick={() => updateCol2(data.key)} className={`body-item ${activeCol2 == data.key ? 'col-2-active' : ''}`}>
-                 <div>
+                 <div className="txt-area">
                      {data.data ? data.data : ""}
    
                  </div>
@@ -127,7 +127,7 @@ const VisualizationTable = () => {
         <div className="col-3">
           {indicatorList && indicatorList.map(indicator => (
                <div key={indicator.key} onClick={() => updateCol3(indicator.key)} className={`body-item ${activeCol3 === indicator.key ? 'col-3-active' : ''}`}>
-                   <div>
+                   <div className="txt-area">
                           {indicator.data ? indicator.data : ""}
                    </div>
                    {activeCol3 === indicator.key && (
