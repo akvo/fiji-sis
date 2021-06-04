@@ -89,6 +89,10 @@ export const Wrapper = styled.div`
     font-weight: 600;
   }
 
+  .txt-area {
+    width: 80%;
+  }
+
   .light-title {
     margin-top: 10px;
     font-size: 12px;
