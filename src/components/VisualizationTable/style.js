@@ -21,7 +21,7 @@ export const Wrapper = styled.div`
 
   .head-item {
     margin-left: 15px;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
   }
   .body-wrap {
@@ -44,7 +44,7 @@ export const Wrapper = styled.div`
   }
 
   .body-item {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
     padding-left: 15px;
     padding-right: 15px;
@@ -52,11 +52,11 @@ export const Wrapper = styled.div`
     padding-bottom: 15px;
     line-break: auto;
     cursor: pointer;
-    color: black;
+    color: #252525;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 600;
+    font-weight: 400;
     min-height: 100px;
   }
 
@@ -70,34 +70,34 @@ export const Wrapper = styled.div`
 
   .col-1-active {
     background: #edf5ea;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
   }
   .col-2-active {
     background: #edf5ea;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
   }
   .col-3-active {
     background: #edf5ea;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
   }
 
   .detail-title {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
   }
 
   .light-title {
     margin-top: 10px;
-    font-size: 11px;
+    font-size: 12px;
     margin-bottom: 4px;
     color: #404244;
   }
 
   .detail-data {
-    font-size: 10px;
+    font-size: 13px;
     color: black;
     margin-bottom: 15px;
   }
