@@ -147,37 +147,56 @@ const VisualizationTable = () => {
          Indicator details
        </div>
 
-       <div className="light-title">Status</div>
-       <div className="detail-data">N/A</div>
+       <div className="data-wrap">
+          <div className="light-title">Status</div>
+          <div className="detail-data">N/A</div>
+       </div>             
 
-       <div className="light-title">Definition</div>
-       <div className="detail-data">{details && details.definition ? details.definition : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Definition</div>
+          <div className="detail-data">{details && details.definition ? details.definition : "N/A"}</div>
+       </div> 
 
-       <div className="light-title">Level of Assessment</div>
-       <div className="detail-data">{details && details.LOA ? details.LOA : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Level of Assessment</div>
+          <div className="detail-data">{details && details.LOA ? details.LOA : "N/A"}</div>
+       </div> 
 
-       <div className="light-title">Verifier</div>
-       <div className="detail-data">{details && details.verifier ? details.verifier : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Verifier</div>
+          <div className="detail-data">{details && details.verifier ? details.verifier : "N/A"}</div>
+       </div>
 
-       <div className="light-title">Sources / where the infomation can be found</div>
-       <div className="detail-data">{details && details.source ? details.source : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Sources / where the infomation can be found</div>
+          <div className="detail-data">{details && details.source ? details.source : "N/A"}</div>
+       </div> 
 
-       <div className="light-title">Methodology / how the information
-       is collected</div>
-       <div className="detail-data">{details && details.methodology ? details.methodology : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Methodology / how the information
+          is collected</div>
+          <div className="detail-data">{details && details.methodology ? details.methodology : "N/A"}</div>
+       </div> 
 
-       <div className="light-title">Who validates / Ensure qulaity of the information</div>
-       <div className="detail-data">{details && details.validates ? details.validates : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Who validates / Ensure qulaity of the information</div>
+          <div className="detail-data">{details && details.validates ? details.validates : "N/A"}</div>
+       </div> 
 
-       <div className="light-title">Data entered in SIS database (for previous carlender year unspecified) </div>
-       <div className="detail-data">{details && details.dataInSIS ? details.dataInSIS : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Data entered in SIS database (for previous carlender year unspecified) </div>
+          <div className="detail-data">{details && details.dataInSIS ? details.dataInSIS : "N/A"}</div>
+       </div> 
 
-       <div className="light-title">Condition for indicators to be addressed and respected</div>
-       <div className="detail-data">{details && details.condition ? details.condition : "N/A"}</div>
+       <div className="data-wrap">
+          <div className="light-title">Condition for indicators to be addressed and respected</div>
+          <div className="detail-data">{details && details.condition ? details.condition : "N/A"}</div>
+       </div> 
 
-       <div className="light-title">Linkage with others</div>
-       <div className="detail-data">{details && details.linkage ? details.linkage : "N/A"}</div>
-
+       <div className="data-wrap">
+          <div className="light-title">Linkage with others</div>
+          <div className="detail-data">{details && details.linkage ? details.linkage : "N/A"}</div>
+       </div> 
 
      </div>
   </Wrapper>)
