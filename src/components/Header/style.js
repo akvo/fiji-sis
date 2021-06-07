@@ -20,8 +20,8 @@ export const Wrapper = styled.div`
 
     .tab-title {
       color: #496b3b;
-      font-size: 13px;
-      font-weight: 700
+      font-weight: 700;
+      line-height: 5;
     }
 
 
