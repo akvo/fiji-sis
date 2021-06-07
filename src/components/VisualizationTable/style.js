@@ -19,6 +19,11 @@ export const Wrapper = styled.div`
     margin-top: 15px;
   }
 
+  .data-wrap {
+    border-bottom: 1px solid #dcd7d7;
+    padding-bottom: 5px;
+  }
+
   .head-item {
     margin-left: 15px;
     font-size: 13px;
