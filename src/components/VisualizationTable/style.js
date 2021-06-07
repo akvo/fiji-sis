@@ -53,16 +53,16 @@ export const Wrapper = styled.div`
   .col-1 {
    height: 94%;
     border-right: 1px solid #dcd7d7;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .col-2 {
     height: 94%;
     border-right: 1px solid #dcd7d7;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .col-3 {
     height: 94%;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   .body-item {
@@ -88,7 +88,7 @@ export const Wrapper = styled.div`
     padding-right: 15px;
     padding-bottom: 15px;
     position: relative;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 97%;
   }
 
