@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   background: white;
+  height: 82vh;
 
   .parameters {
     width: 75%;
@@ -10,6 +11,19 @@ export const Wrapper = styled.div`
 
   .details {
     width: 25%;
+  }
+
+  .stay {
+    position: fixed;
+    background: #f7f7f7;
+    width: 24%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .first {
+    margin-top: 40px;
   }
 
   .head-group {
@@ -37,15 +51,18 @@ export const Wrapper = styled.div`
   }
 
   .col-1 {
-    height: 96%;
+   height: 94%;
     border-right: 1px solid #dcd7d7;
+    overflow-y: scroll;
   }
   .col-2 {
-    height: 96%;
+    height: 94%;
     border-right: 1px solid #dcd7d7;
+    overflow-y: scroll;
   }
   .col-3 {
-    height: 100%;
+    height: 94%;
+    overflow-y: scroll;
   }
 
   .body-item {
@@ -67,10 +84,12 @@ export const Wrapper = styled.div`
 
   .details {
     background: #f7f7f7;
-    padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
+    position: relative;
+    overflow-y: scroll;
+    height: 97%;
   }
 
   .col-1-active {

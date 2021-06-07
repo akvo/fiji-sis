@@ -143,11 +143,11 @@ const VisualizationTable = () => {
        </div>
      </div>
      <div className="details">
-       <div className="detail-title">
+       <div className="detail-title stay">
          Indicator details
        </div>
 
-       <div className="data-wrap">
+       <div className="data-wrap first">
           <div className="light-title">Status</div>
           <div className="detail-data">N/A</div>
        </div>             
@@ -193,7 +193,7 @@ const VisualizationTable = () => {
           <div className="detail-data">{details && details.condition ? details.condition : "N/A"}</div>
        </div> 
 
-       <div className="data-wrap">
+       <div>
           <div className="light-title">Linkage with others</div>
           <div className="detail-data">{details && details.linkage ? details.linkage : "N/A"}</div>
        </div> 
